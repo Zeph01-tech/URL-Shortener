@@ -3,9 +3,8 @@ const nanoid = require('nanoid')
 
 const shortUrlSchema = new mongoose.Schema({
     fullUrl: String,
-    shortUrl: String,
-    shortCode: {
-        type: Number,
+    shortId: {
+        type: String,
         default: () => nanoid.nanoid(6)
     },
     clicks : {
