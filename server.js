@@ -27,7 +27,7 @@ app.post("/shortenUrl", async (req, res) => {
             shortUrl: `http://localhost:3000/${newUrl.shortId}`
         })
     }
-    else return res.status(400).send("Fk u")
+    else return res.status(400).send("sorry invalid url")
 })
 
 app.get("/:shortid", async (req, res) =>  {
