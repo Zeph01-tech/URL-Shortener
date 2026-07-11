@@ -5,11 +5,12 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "./backend/index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon ./backend/server.js"
   },
   "dependencies": {
+    "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^9.7.3",
